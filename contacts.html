@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Александр Гловюк</div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="practice.html" class="nav-link">Производственная практика</a></li>
+                <li class="nav-item"><a href="coursework.html" class="nav-link">Курсовая работа</a></li>
+                <li class="nav-item"><a href="achievements.html" class="nav-link">Мои достижения</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-main">
+        <!-- Информация о колледже -->
+        <section class="contact-card college">
+            <h2>Московский колледж транспорта</h2>
+            <p><strong>Адрес:</strong> г. Москва, Кучин пер., д. 14</p>
+            <p><strong>Телефон:</strong> +7 (495) 686-50-00</p>
+            <p><strong>Сайт:</strong> <a href="https://mkgt.ru" target="_blank">mkt.moscow</a></p>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="contact-card form-section">
+            <h2>Свяжитесь со мной</h2>
+            <form id="contactForm">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Напишите ваше сообщение"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <p id="formStatus"></p>
+        </section>
+
+        <!-- Карта -->
+        <section class="map-section">
+            <h3>Как нас найти</h3>
+            <div class="map">
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?q=Москва,+Кучин+переулок,+д.14&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Александр Гловюк | ВБ-351</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
